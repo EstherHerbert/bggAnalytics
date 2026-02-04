@@ -17,6 +17,7 @@ This function scraps BoardGameGeek website for IDs of games with given
 \code{places} in the games ranking.
 }
 \examples{
+\dontrun{
 bgg_topgames()
 
 x <- 1:5 * 25 + 5
@@ -24,6 +25,7 @@ ids <- bgg_topgames(sample(x))
 gm <- bggGames$new(ids)
 gm$expand(c("name", "rank"))
 gm
+}
 
 }
 \author{
